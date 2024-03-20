@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date: 06/03/2024
+## Date: 23/02/2024
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -27,66 +27,64 @@ content = """
 <!DOCTYPE html>
 <html>
 <head>
-<title> Software company </title>
+<title>software company</title>
 </head>
 <body>
-<center> <h1> Top Five revenue Generating Software Companies </h1> </center>
-<table border="5" cellspacing="13" Cellpadding="13">
+<center> <h1> Top five revenue generating software companies </h1> </center>
+<table border="5" cellspacing="7" cellpadding="17">
 
 <tr>
-<th>Rank</th>
-<th>Company</th>
+<th>rank</th>
+<th>company</th>
 <th>sales</th>
-<th>Nationality</th>
-<th>Revenue</th>
+<th>nationality</th>
+<th>revenue</th>
 </tr>
 
 <tr>
 <td>1</td>
-<td>Microsoft</td>
-<td>57.9</td>
+<td>microsoft</td>
+<td>57.9c</td>
 <td>USA</td>
 <td>100000</td>
 </tr>
 
 <tr>
 <td>2</td>
-<td>Oracle</td>
-<td>21.0</td>
+<td>oracles</td>
+<td>21.8c</td>
 <td>USA</td>
-<td>95000</td>
+<td>950000</td>
 </tr>
 
 <tr>
 <td>3</td>
 <td>SAP</td>
-<td>16.1</td>
+<td>16.1c</td>
 <td>GERMANY</td>
-<td>90000</td>
+<td>900000</td>
 </tr>
 
 <tr>
 <td>4</td>
 <td>Computer Associates</td>
-<td>4.2</td>
+<td>4.2c</td>
 <td>USA</td>
-<td>85000</td>
+<td>850000</td>
 </tr>
 
 <tr>
 <td>5</td>
 <td>Adobe</td>
-<td>3.4</td>
+<td>3.4c</td>
 <td>USA</td>
 <td>80000</td>
 </tr>
 
-
 </table>
-
 </body>
 </html>
-
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -100,9 +98,8 @@ print("my webserver is running...")
 httpd.serve_forever()
 ```
 ## OUTPUT:
-![image](https://github.com/STANLEY-13/simplewebserver/assets/148198816/e50e1530-4120-4ad4-8990-aabfaf29a3c3)
-
-![outputs](<webserver terminal.png>)
+![Screenshot 2024-03-20 092216](https://github.com/STANLEY-13/simplewebserver/assets/148198816/5afbdb44-d2ec-46eb-adcc-c14d45c2a93e)
+![top five software company](https://github.com/STANLEY-13/simplewebserver/assets/148198816/e4716bdf-daca-435d-b977-c18e6bdd2e31)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
